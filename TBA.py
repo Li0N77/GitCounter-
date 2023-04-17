@@ -20,7 +20,7 @@ async def download_all(urls:list):
             tasks.append(task)
         await asyncio.gather(*tasks,return_exceptions=True) # the await must be nest inside of the session
 
-url = input("Please enter your image url : ")
+url = input("Please enter your profile view url : ")
 countx = int(input("Please enter count : "))
 url_list = [url] * countx
 start = time.time()
